@@ -302,7 +302,7 @@ const Register = () => {
         return;
       }
     }
-          await axios.post("http://localhost:5000/api/register", {
+          await axios.post(`${process.env.REACT_APP_API_URL}/api/register`, {
         ...formData,
         currency_code,
         supermarketLocation,
