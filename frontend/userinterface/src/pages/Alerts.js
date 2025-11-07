@@ -13,7 +13,7 @@ const Alerts = () => {
     if (!userId) return;
 
     // Initialize socket connection
-    const socket = io('http://localhost:5000', {
+    const socket = io('${process.env.REACT_APP_API_URL}', {
       reconnection: true,
       reconnectionAttempts: 5,
       reconnectionDelay: 1000,
