@@ -16,7 +16,7 @@ const OwnerCategoryPage = () => {
   const token = sessionStorage.getItem("token");
 
   useEffect(() => {
-    const socket = io('http://localhost:5000');
+    const socket = io(`${process.env.REACT_APP_API_URL}`);
       
       socket.on('productDeleted', ({ product_id, location_id }) => {
     console.log("Received productDeleted event:", { product_id, location_id });
@@ -38,7 +38,7 @@ const OwnerCategoryPage = () => {
       try {
         //const response = await axios.get(`http://localhost:5000/api/productsbycategory/${categoryId}`);
             const response = await axios.get(
-      `http://localhost:5000/api/productsbycategory/${categoryId}`,
+      `${process.env.REACT_APP_API_URL}/api/productsbycategory/${categoryId}`,
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -50,7 +50,7 @@ const OwnerCategoryPage = () => {
         const productsWithPrices = await Promise.all(
           (response.data.products || []).map(async (product) => {
             try {
-              const priceResponse = await axios.get(`http://localhost:5000/api/products/${product.product_id}?locationId=${locationId}`, {
+              const priceResponse = await axios.get(`${process.env.REACT_APP_API_URL}/api/products/${product.product_id}?locationId=${locationId}`, {
                 headers: {
                   Authorization: `Bearer ${token}`
                 }
@@ -97,7 +97,7 @@ const OwnerCategoryPage = () => {
   const handleDeleteProduct = async (productId) => {
     if (window.confirm('Are you sure you want to remove this product from your location?')) {
       try {
-        await axios.delete(`http://localhost:5000/api/products/${productId}`, {
+        await axios.delete(`${process.env.REACT_APP_API_URL}/api/products/${productId}`, {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -124,7 +124,7 @@ const OwnerCategoryPage = () => {
               onClick={() => handleProductClick(product.product_id)}
             >
               <img 
-                src={`http://localhost:5000/${product.image_path}`}
+                src={`${process.env.REACT_APP_API_URL}/${product.image_path}`}
                 alt={product.product_name} 
                 className="product-image"
               />
