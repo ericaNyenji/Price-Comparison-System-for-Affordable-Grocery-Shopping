@@ -13,7 +13,7 @@ const Favorites = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const newSocket = io('http://localhost:5000', {
+    const newSocket = io(`${process.env.REACT_APP_API_URL}`, {
       reconnection: true,
       reconnectionAttempts: 5,
       reconnectionDelay: 1000,
@@ -51,12 +51,12 @@ const Favorites = () => {
       }
 
       try {
-        const response = await axios.get(`http://localhost:5000/api/favorites/user/${userId}`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/favorites/user/${userId}`);
         const favoriteProducts = await Promise.all(
           response.data.data.map(async (favorite) => {
             try {
               const productResponse = await axios.get(
-                `http://localhost:5000/api/products/details/${favorite.product_id}`
+                `${process.env.REACT_APP_API_URL}/api/products/details/${favorite.product_id}`
               );
               const product = productResponse.data.product;
 
@@ -96,7 +96,7 @@ const Favorites = () => {
 
   const toggleFavorite = async (productId, priceId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/favorites/${productId}?userId=${userId}&priceId=${priceId}`);
+      await axios.delete(`${process.env.REACT_APP_API_URL}/api/favorites/${productId}?userId=${userId}&priceId=${priceId}`);
       setFavorites(favorites.filter(fav => !(fav.product_id === productId && fav.price_id === priceId)));
     } catch (err) {
       console.error('Error removing favorite:', err);
@@ -125,7 +125,7 @@ const Favorites = () => {
             >
               <div className="favorite-image-container">
                 <img
-                  src={`http://localhost:5000/${favorite.image_path}`}
+                  src={`${process.env.REACT_APP_API_URL}/${favorite.image_path}`}
                   alt={favorite.product_name}
                   className="favorite-image"
                 />
@@ -140,7 +140,7 @@ const Favorites = () => {
                   
                   <div className="supermarket">
                     <img
-                      src={`http://localhost:5000/${favorite.supermarket_image}`}
+                      src={`${process.env.REACT_APP_API_URL}/${favorite.supermarket_image}`}
                       alt={favorite.supermarket_name}
                       className="supermarket-logo"
                     />
