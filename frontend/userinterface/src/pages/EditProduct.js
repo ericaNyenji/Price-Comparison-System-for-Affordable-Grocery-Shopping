@@ -30,8 +30,8 @@ const EditProduct = () => {
     const fetchDetails = async () => {
       try {
         const [productRes, submissionsRes] = await Promise.all([
-          axios.get(`http://localhost:5000/api/products/${product_id}?locationId=${location_id}`),
-          axios.get(`http://localhost:5000/api/price-submissions/pending/${location_id}`, {
+          axios.get(`${process.env.REACT_APP_API_URL}/api/products/${product_id}?locationId=${location_id}`),
+          axios.get(`${process.env.REACT_APP_API_URL}/api/price-submissions/pending/${location_id}`, {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`,
             },
@@ -78,7 +78,7 @@ const EditProduct = () => {
   // Initialize socket connection
   useEffect(() => {
     const userId = sessionStorage.getItem("userId");
-    const newSocket = io('http://localhost:5000', {
+    const newSocket = io(`${process.env.REACT_APP_API_URL}`, {
       reconnection: true,
       reconnectionAttempts: 5,
       reconnectionDelay: 1000,
@@ -132,7 +132,7 @@ const EditProduct = () => {
     try {
       const token = sessionStorage.getItem("token");
       const response = await axios.put(
-        `http://localhost:5000/api/price-submissions/approve/${submissionId}`,
+        `${process.env.REACT_APP_API_URL}/api/price-submissions/approve/${submissionId}`,
         {},
         {
           headers: {
@@ -155,7 +155,7 @@ const EditProduct = () => {
 
         // Automatically update the price in the database
         try {
-          await axios.put(`http://localhost:5000/api/products/${product_id}`, {
+          await axios.put(`${process.env.REACT_APP_API_URL}/api/products/${product_id}`, {
             price: approvedSubmission.submission.new_price,
             locationId: location_id
           }, {
@@ -183,7 +183,7 @@ const EditProduct = () => {
     try {
       const token = sessionStorage.getItem("token");
       await axios.put(
-        `http://localhost:5000/api/price-submissions/reject/${submissionId}`,
+        `${process.env.REACT_APP_API_URL}/api/price-submissions/reject/${submissionId}`,
         {},
         {
           headers: {
@@ -201,7 +201,7 @@ const EditProduct = () => {
 
   const handlePriceUpdate = async () => {
     try {
-      await axios.put(`http://localhost:5000/api/products/${product_id}`, {
+      await axios.put(`${process.env.REACT_APP_API_URL}/api/products/${product_id}`, {
         price: product.price,
         locationId: location_id
       });
@@ -223,7 +223,7 @@ const EditProduct = () => {
       // Set start time to current time
       const currentDateTime = new Date().toISOString().slice(0, 16);
 
-      const response = await axios.post('http://localhost:5000/api/deals', {
+      const response = await axios.post('${process.env.REACT_APP_API_URL}/api/deals', {
         productId: product_id,
         dealStartDate: currentDateTime,
         dealEndDate: dealForm.endDateTime,
@@ -252,7 +252,7 @@ const EditProduct = () => {
       // Set start time to current time
       const currentDateTime = new Date().toISOString().slice(0, 16);
 
-      const response = await axios.put(`http://localhost:5000/api/deals/${product_id}`, {
+      const response = await axios.put(`${process.env.REACT_APP_API_URL}/api/deals/${product_id}`, {
         dealStartDate: currentDateTime,
         dealEndDate: dealForm.endDateTime,
         locationId: location_id,
@@ -273,7 +273,7 @@ const EditProduct = () => {
     if (!confirm) return;
     
     try {
-      await axios.delete(`http://localhost:5000/api/deals/${product_id}?locationId=${location_id}`);
+      await axios.delete(`${process.env.REACT_APP_API_URL}/api/deals/${product_id}?locationId=${location_id}`);
       setProduct(prev => ({ ...prev, onDeal: false, currentDeal: null }));
       alert("❌ Deal removed.");
     } catch (error) {
@@ -322,7 +322,7 @@ const EditProduct = () => {
 
                 {submission.submission.evidence_image && submission.submission.evidence_image !== "null" && (
                 <img
-                  src={`http://localhost:5000/${submission.submission.evidence_image}`}
+                  src={`${process.env.REACT_APP_API_URL}/${submission.submission.evidence_image}`}
                   alt="Evidence"
                   style={{ width: "120px", borderRadius: "8px", marginTop: "8px", objectFit: "cover" }}
                 />
