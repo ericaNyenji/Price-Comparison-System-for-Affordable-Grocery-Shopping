@@ -54,7 +54,7 @@ const Alerts = () => {
     const fetchAlerts = async () => {
       try {
         console.log('Fetching alerts for user:', userId);
-        const response = await axios.get(`http://localhost:5000/api/alerts/${userId}?userType=${userType}`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/alerts/${userId}?userType=${userType}`);
         console.log('Alerts response:', response.data);
         setAlerts(response.data || []);
       } catch (error) {
@@ -85,7 +85,7 @@ const Alerts = () => {
       }
 
       const response = await axios.put(
-        `http://localhost:5000/api/alerts/${alertId}/read`,
+        `${process.env.REACT_APP_API_URL}/api/alerts/${alertId}/read`,
         {},
         {
           headers: {
