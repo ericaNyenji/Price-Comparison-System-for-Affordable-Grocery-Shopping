@@ -473,7 +473,7 @@ const SupermarketOwnerDashboard = () => {
       {/* --- EXISTING PRODUCT SELECTED --- */}
       <div className="selected-product-preview">
         <img 
-          src={`http://localhost:5000/${selectedProduct.image_path}`} 
+          src={`${process.env.REACT_APP_API_URL}/${selectedProduct.image_path}`} 
           alt={selectedProduct.product_name}
           className="preview-image"
         />
