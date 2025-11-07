@@ -112,7 +112,7 @@ const DealsSection = () => {
                 </div> */}
                 
                  <img
-                    src={`http://localhost:5000/${deal.supermarket_image}`}
+                    src={`${process.env.REACT_APP_API_URL}/${deal.supermarket_image}`}
                     alt={deal.supermarket_name}
                     className="supermarket-logo"
                   />
