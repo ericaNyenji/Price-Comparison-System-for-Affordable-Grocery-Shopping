@@ -13,7 +13,7 @@ const DealsSection = () => {
   // Initialize socket
   useEffect(() => {
     const userId = sessionStorage.getItem("userId");
-    const newSocket = io('http://localhost:5000', {
+    const newSocket = io(`${process.env.REACT_APP_API_URL}`, {
       reconnection: true,
       reconnectionAttempts: 5,
       reconnectionDelay: 1000,
@@ -53,7 +53,7 @@ const DealsSection = () => {
   useEffect(() => {
     const fetchDeals = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/deals');
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}api/deals`);
         setDeals(response.data.data);
       } catch (error) {
         console.error('Error fetching deals:', error);
@@ -85,7 +85,7 @@ const DealsSection = () => {
               <div
                 className="card-media"
                 style={{
-                  backgroundImage: `url(http://localhost:5000/${deal.image_path})`
+                  backgroundImage: `url(${process.env.REACT_APP_API_URL}/${deal.image_path})`
                 }}
               />
 
