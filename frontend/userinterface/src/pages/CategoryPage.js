@@ -17,7 +17,7 @@ const CategoryPage = () => {
         const token = sessionStorage.getItem("token");
 
         const response = await axios.get(
-          `http://localhost:5000/api/productsbycategory/${categoryId}`,
+          `${process.env.REACT_APP_API_URL}/api/productsbycategory/${categoryId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -55,7 +55,7 @@ const CategoryPage = () => {
             >
               <div
                 className="card-media"
-                style={{ backgroundImage: `url(http://localhost:5000/${product.image_path})` }}
+                style={{ backgroundImage: `url(${process.env.REACT_APP_API_URL}/${product.image_path})` }}
               />
               <div className="card-content">
                 <h3>{product.product_name}</h3>
