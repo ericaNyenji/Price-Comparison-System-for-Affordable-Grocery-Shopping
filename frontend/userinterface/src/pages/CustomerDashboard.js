@@ -32,7 +32,7 @@ const CustomerDashboard = () => {
 
   const fetchDeals = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/deals');
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/deals`);
     } catch (error) {
       console.error('Error fetching deals:', error);
     }
@@ -42,10 +42,10 @@ const CustomerDashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const exploreData = await axios.get("http://localhost:5000/api/explore");
+        const exploreData = await axios.get(`${process.env.REACT_APP_API_URL}/api/explore`);
         setExploreData(exploreData.data);
         console.log(exploreData)
-        const supermarketsResponse = await axios.get("http://localhost:5000/api/supermarkets");
+        const supermarketsResponse = await axios.get(`${process.env.REACT_APP_API_URL}/api/supermarkets`);
         setSupermarkets(supermarketsResponse.data);
         console.log(supermarketsResponse)
       } catch (err) {
@@ -63,7 +63,7 @@ const CustomerDashboard = () => {
     if (!userId) return;
 
     // Initialize socket connection
-    const socket = io('http://localhost:5000', {
+    const socket = io(`${process.env.REACT_APP_API_URL}`, {
       reconnection: true,
       reconnectionAttempts: 5,
       reconnectionDelay: 1000,
@@ -151,7 +151,7 @@ const handleSearchNoFilter = async () => {
   try {
     const token = sessionStorage.getItem("token");
 
-    let url = `http://localhost:5000/api/search?query=${searchQuery}`;
+    let url = `${process.env.REACT_APP_API_URL}/api/search?query=${searchQuery}`;
 
     // Authorization header here too
     const response = await axios.get(url, {
@@ -174,7 +174,7 @@ const handleSearch = async () => {
   try {
     const token = sessionStorage.getItem("token"); // get JWT
 
-    let url = `http://localhost:5000/api/search?query=${searchQuery}`;
+    let url = `${process.env.REACT_APP_API_URL}/api/search?query=${searchQuery}`;
 
     if (selectedFilter) {
       const selectedSupermarket = supermarkets.find(s => s.supermarket_name === selectedFilter);
