@@ -1,0 +1,324 @@
+.deals-section {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.deals-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.deal-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.deal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-media {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.supermarket-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0.3rem;
+}
+
+.supermarket-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.supermarket-name {
+  font-weight: 600;
+  color: #34495e;
+}
+
+.deal-location-info {
+  margin-bottom: 0.5rem;
+  color: #27ae60;
+  font-weight: 500;
+}
+
+.deal-price-info {
+  margin-top: 0.5rem;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.deal-price {
+  color: #e74c3c;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.discount {
+  color: #4caf50;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.deal-dates {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.deal-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff5722;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+.deals-section {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  height: auto; /* 👈 ensures the card grows with content */
+  min-height: 420px; /* 👈 increases minimum height */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-media {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content {
+  padding: 16px;
+  flex: 1; /* allows content to expand */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.supermarket-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
+.deal-price-info {
+  margin-top: 10px;
+}
+
+.discount {
+  color: #e63946;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.deal-dates {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.deal-badge {
+  position: absolute;
+  top: 12px;
+  right: -10px; /* instead of -40px */
+  background-color: blue;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 35px; /* adjust width to fit */
+  text-align: center;
+  transform: rotate(45deg);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.deals-section {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  position: relative; /* needed for absolute positioning */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  height: auto;
+  min-height: 420px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-media {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.deal-price-info {
+  margin-top: 10px;
+}
+
+.discount {
+  color: #e63946;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.deal-dates {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ✅ Supermarket logo bottom-right */
+.supermarket-logo {
+  /* width: 45px;
+  height: 45px; */
+  object-fit: contain;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0.001px;
+  right: 0.001px;
+  background: #fff;
+  /* padding: 4px; */
+  /* box-shadow: 0 2px 6px rgba(0,0,0,0.1); */
+}
+
+/* ✅ Diagonal DEAL badge */
+.deal-badge {
+  position: absolute;
+  top: 12px;
+  right: -40px;
+  background-color: blue;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 40px;
+  text-align: center;
+  transform: rotate(45deg);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  z-index: 2;
+}

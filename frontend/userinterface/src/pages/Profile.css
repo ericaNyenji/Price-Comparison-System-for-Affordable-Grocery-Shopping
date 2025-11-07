@@ -1,0 +1,73 @@
+.profile-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  /* 🌈 Gradient background */
+  /* background: linear-gradient(135deg, #f9f9f9, orangered);
+  background-size: 200% 200%; */
+  /* animation: gradientShift 8s ease infinite; */
+
+  color: #222;
+  /* transition: background 0.5s ease;*/
+} 
+
+/* 🌀 Optional: smooth animated gradient shift */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.profile-container h2 {
+  color: #222;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(255, 69, 0, 0.3);
+}
+
+.profile-container p {
+  font-size: 1.05rem;
+  margin: 0.5rem 0;
+  color: #222;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.error-text {
+  color: #fff;
+  background: #e74c3c;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.loading-text {
+  text-align: center;
+  color: #444;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,127 @@
+.homepage-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.main-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background-color: orangered;
+  color: white;
+  border: none;
+}
+
+.btn.primary:hover {
+  background-color: #e02a0e;
+  /* box-shadow: 0 0 10px #660066; */
+  /* transform: scale(1.05); */
+}
+
+
+.btn.outline {
+  background-color: transparent;
+  border: 2px solid #e95038;
+  color: black;
+}
+
+.btn.outline:hover {
+  background-color: #e3f2fd;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+
+.feature-card {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  color: #222;
+  overflow: hidden; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Decorative orange-red diagonal lines at bottom-right ( / ) */
+.feature-card::before,
+.feature-card::after {
+  content: "";
+  position: absolute;
+  background: orangered;
+  border-radius: 3px;
+  transform: rotate(-45deg); /* angle toward top-right */
+  transform-origin: center;
+}
+
+
+.feature-card::before {
+  width: 140px;       
+  height: 5px;
+  background: orangered;
+  bottom: 20px;       
+  right: -40px;       
+}
+
+
+.feature-card::after {
+  width: 100px;
+  height: 3px;
+  background: #ff7b3d;
+  bottom: 40px;       
+  right: -20px;
+  opacity: 0.9;
+}
+
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  /* box-shadow: 0 6px 20px rgba(255, 69, 0, 0.25); */
+}
+
+.feature-card h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #111;
+}
+
+.feature-card p {
+  color: #444;
+}
+
+

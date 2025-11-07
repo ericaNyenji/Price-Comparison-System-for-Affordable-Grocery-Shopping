@@ -1,0 +1,46 @@
+.explore-section {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.explore-icons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+  
+.explore-category-icon {
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s;
+}
+  
+  .explore-category-icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+  
+  .explore-category-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  
+.explore-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+    
+  
+.explore-icons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+ 

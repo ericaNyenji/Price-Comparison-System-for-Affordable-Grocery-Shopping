@@ -1,0 +1,115 @@
+/* Top navigation bar */
+.top-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-start; /* allows a bit more vertical room */
+  gap: 2rem;
+  padding: 1.6rem 2rem 1rem; /* extra space above for greeting */
+  background: transparent;
+  z-index: 1000;
+}
+
+/* icon bar container */
+.icon-bar {
+  display: flex;
+  gap: 1.2rem; /* smaller spacing between icons */
+  align-items: center;
+}
+
+/* general nav icon styles */
+.nav-icon {
+  color: #aaa; /* grey outline style */
+  cursor: pointer;
+  border: 2px solid #555;
+  border-radius: 50%;
+  padding: 3px;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-icon:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  transform: scale(1.1);
+}
+
+.nav-icon.active {
+  background-color: white; /* white fill when clicked */
+  color: black; /* contrast */
+  border-color: white;
+}
+
+/* Stack greeting text above the avatar, without shifting the layout */
+.avatar-container {
+  position: relative;
+  display: flex;
+  align-items: center; /* aligns avatar with other icons */
+  justify-content: center;
+}
+
+/* Avatar icon styling remains aligned with others */
+.avatar-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.avatar-circle {
+  border: 2px solid #555;
+  border-radius: 50%;
+  padding: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.avatar-circle.active {
+  background-color: white;
+  border-color: white;
+}
+
+.avatar-icon {
+  color: #aaa;
+  transition: color 0.2s ease;
+}
+
+.avatar-circle.active .avatar-icon {
+  color: black;
+}
+
+/* Greeting positioned above icon, no overlap */
+.user-greeting {
+  position: absolute;
+  top: -2rem; /* more space now available */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ccc;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+
+/* Profile dropdown */
+.profile-menu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  z-index: 100;
+}
+
+.profile-menu-item {
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.profile-menu-item:hover {
+  background: #333;
+}

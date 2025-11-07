@@ -1,0 +1,774 @@
+{
+  "Afghanistan": {
+    "code": "AFN",
+    "symbol": "؋"
+  },
+  "Albania": {
+    "code": "ALL",
+    "symbol": "L"
+  },
+  "Algeria": {
+    "code": "DZD",
+    "symbol": "دج"
+  },
+  "Andorra": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Angola": {
+    "code": "AOA",
+    "symbol": "Kz"
+  },
+  "Antigua and Barbuda": {
+    "code": "XCD",
+    "symbol": "$"
+  },
+  "Argentina": {
+    "code": "ARS",
+    "symbol": "$"
+  },
+  "Armenia": {
+    "code": "AMD",
+    "symbol": "֏"
+  },
+  "Australia": {
+    "code": "AUD",
+    "symbol": "A$"
+  },
+  "Austria": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Azerbaijan": {
+    "code": "AZN",
+    "symbol": "₼"
+  },
+  "Bahamas": {
+    "code": "BSD",
+    "symbol": "B$"
+  },
+  "Bahrain": {
+    "code": "BHD",
+    "symbol": ".د.ب"
+  },
+  "Bangladesh": {
+    "code": "BDT",
+    "symbol": "৳"
+  },
+  "Barbados": {
+    "code": "BBD",
+    "symbol": "Bds$"
+  },
+  "Belarus": {
+    "code": "BYN",
+    "symbol": "Br"
+  },
+  "Belgium": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Belize": {
+    "code": "BZD",
+    "symbol": "BZ$"
+  },
+  "Benin": {
+    "code": "XOF",
+    "symbol": "CFA"
+  },
+  "Bhutan": {
+    "code": "BTN",
+    "symbol": "Nu."
+  },
+  "Bolivia": {
+    "code": "BOB",
+    "symbol": "Bs."
+  },
+  "Bosnia and Herzegovina": {
+    "code": "BAM",
+    "symbol": "KM"
+  },
+  "Botswana": {
+    "code": "BWP",
+    "symbol": "P"
+  },
+  "Brazil": {
+    "code": "BRL",
+    "symbol": "R$"
+  },
+  "Brunei": {
+    "code": "BND",
+    "symbol": "B$"
+  },
+  "Bulgaria": {
+    "code": "BGN",
+    "symbol": "лв"
+  },
+  "Burkina Faso": {
+    "code": "XOF",
+    "symbol": "CFA"
+  },
+  "Burundi": {
+    "code": "BIF",
+    "symbol": "FBu"
+  },
+  "Cambodia": {
+    "code": "KHR",
+    "symbol": "៛"
+  },
+  "Cameroon": {
+    "code": "XAF",
+    "symbol": "FCFA"
+  },
+  "Canada": {
+    "code": "CAD",
+    "symbol": "CA$"
+  },
+  "Cape Verde": {
+    "code": "CVE",
+    "symbol": "$"
+  },
+  "Central African Republic": {
+    "code": "XAF",
+    "symbol": "FCFA"
+  },
+  "Chad": {
+    "code": "XAF",
+    "symbol": "FCFA"
+  },
+  "Chile": {
+    "code": "CLP",
+    "symbol": "$"
+  },
+  "China": {
+    "code": "CNY",
+    "symbol": "¥"
+  },
+  "Colombia": {
+    "code": "COP",
+    "symbol": "$"
+  },
+  "Comoros": {
+    "code": "KMF",
+    "symbol": "CF"
+  },
+  "Congo (Democratic Republic)": {
+    "code": "CDF",
+    "symbol": "FC"
+  },
+  "Congo (Republic)": {
+    "code": "XAF",
+    "symbol": "FCFA"
+  },
+  "Costa Rica": {
+    "code": "CRC",
+    "symbol": "₡"
+  },
+  "Croatia": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Cuba": {
+    "code": "CUP",
+    "symbol": "$"
+  },
+  "Cyprus": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Czech Republic": {
+    "code": "CZK",
+    "symbol": "Kč"
+  },
+  "Denmark": {
+    "code": "DKK",
+    "symbol": "kr"
+  },
+  "Djibouti": {
+    "code": "DJF",
+    "symbol": "Fdj"
+  },
+  "Dominica": {
+    "code": "XCD",
+    "symbol": "$"
+  },
+  "Dominican Republic": {
+    "code": "DOP",
+    "symbol": "RD$"
+  },
+  "Ecuador": {
+    "code": "USD",
+    "symbol": "$"
+  },
+  "Egypt": {
+    "code": "EGP",
+    "symbol": "£"
+  },
+  "El Salvador": {
+    "code": "USD",
+    "symbol": "$"
+  },
+  "Equatorial Guinea": {
+    "code": "XAF",
+    "symbol": "FCFA"
+  },
+  "Eritrea": {
+    "code": "ERN",
+    "symbol": "Nfk"
+  },
+  "Estonia": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Eswatini": {
+    "code": "SZL",
+    "symbol": "E"
+  },
+  "Ethiopia": {
+    "code": "ETB",
+    "symbol": "Br"
+  },
+  "Fiji": {
+    "code": "FJD",
+    "symbol": "FJ$"
+  },
+  "Finland": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "France": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Gabon": {
+    "code": "XAF",
+    "symbol": "FCFA"
+  },
+  "Gambia": {
+    "code": "GMD",
+    "symbol": "D"
+  },
+  "Georgia": {
+    "code": "GEL",
+    "symbol": "₾"
+  },
+  "Germany": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Ghana": {
+    "code": "GHS",
+    "symbol": "₵"
+  },
+  "Greece": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Grenada": {
+    "code": "XCD",
+    "symbol": "$"
+  },
+  "Guatemala": {
+    "code": "GTQ",
+    "symbol": "Q"
+  },
+  "Guinea": {
+    "code": "GNF",
+    "symbol": "FG"
+  },
+  "Guinea-Bissau": {
+    "code": "XOF",
+    "symbol": "CFA"
+  },
+  "Guyana": {
+    "code": "GYD",
+    "symbol": "G$"
+  },
+  "Haiti": {
+    "code": "HTG",
+    "symbol": "G"
+  },
+  "Honduras": {
+    "code": "HNL",
+    "symbol": "L"
+  },
+  "Hungary": {
+    "code": "HUF",
+    "symbol": "Ft"
+  },
+  "Iceland": {
+    "code": "ISK",
+    "symbol": "kr"
+  },
+  "India": {
+    "code": "INR",
+    "symbol": "₹"
+  },
+  "Indonesia": {
+    "code": "IDR",
+    "symbol": "Rp"
+  },
+  "Iran": {
+    "code": "IRR",
+    "symbol": "﷼"
+  },
+  "Iraq": {
+    "code": "IQD",
+    "symbol": "ع.د"
+  },
+  "Ireland": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Israel": {
+    "code": "ILS",
+    "symbol": "₪"
+  },
+  "Italy": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Jamaica": {
+    "code": "JMD",
+    "symbol": "J$"
+  },
+  "Japan": {
+    "code": "JPY",
+    "symbol": "¥"
+  },
+  "Jordan": {
+    "code": "JOD",
+    "symbol": "د.ا"
+  },
+  "Kazakhstan": {
+    "code": "KZT",
+    "symbol": "₸"
+  },
+  "Kenya": {
+    "code": "KES",
+    "symbol": "KSh"
+  },
+  "Kiribati": {
+    "code": "AUD",
+    "symbol": "A$"
+  },
+  "Kuwait": {
+    "code": "KWD",
+    "symbol": "د.ك"
+  },
+  "Kyrgyzstan": {
+    "code": "KGS",
+    "symbol": "с"
+  },
+  "Laos": {
+    "code": "LAK",
+    "symbol": "₭"
+  },
+  "Latvia": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Lebanon": {
+    "code": "LBP",
+    "symbol": "ل.ل"
+  },
+  "Lesotho": {
+    "code": "LSL",
+    "symbol": "L"
+  },
+  "Liberia": {
+    "code": "LRD",
+    "symbol": "$"
+  },
+  "Libya": {
+    "code": "LYD",
+    "symbol": "ل.د"
+  },
+  "Liechtenstein": {
+    "code": "CHF",
+    "symbol": "Fr"
+  },
+  "Lithuania": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Luxembourg": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Madagascar": {
+    "code": "MGA",
+    "symbol": "Ar"
+  },
+  "Malawi": {
+    "code": "MWK",
+    "symbol": "MK"
+  },
+  "Malaysia": {
+    "code": "MYR",
+    "symbol": "RM"
+  },
+  "Maldives": {
+    "code": "MVR",
+    "symbol": "Rf"
+  },
+  "Mali": {
+    "code": "XOF",
+    "symbol": "CFA"
+  },
+  "Malta": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Marshall Islands": {
+    "code": "USD",
+    "symbol": "$"
+  },
+  "Mauritania": {
+    "code": "MRU",
+    "symbol": "UM"
+  },
+  "Mauritius": {
+    "code": "MUR",
+    "symbol": "₨"
+  },
+  "Mexico": {
+    "code": "MXN",
+    "symbol": "$"
+  },
+  "Micronesia": {
+    "code": "USD",
+    "symbol": "$"
+  },
+  "Moldova": {
+    "code": "MDL",
+    "symbol": "L"
+  },
+  "Monaco": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Mongolia": {
+    "code": "MNT",
+    "symbol": "₮"
+  },
+  "Montenegro": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Morocco": {
+    "code": "MAD",
+    "symbol": "د.م."
+  },
+  "Mozambique": {
+    "code": "MZN",
+    "symbol": "MT"
+  },
+  "Myanmar": {
+    "code": "MMK",
+    "symbol": "K"
+  },
+  "Namibia": {
+    "code": "NAD",
+    "symbol": "N$"
+  },
+  "Nauru": {
+    "code": "AUD",
+    "symbol": "A$"
+  },
+  "Nepal": {
+    "code": "NPR",
+    "symbol": "₨"
+  },
+  "Netherlands": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "New Zealand": {
+    "code": "NZD",
+    "symbol": "NZ$"
+  },
+  "Nicaragua": {
+    "code": "NIO",
+    "symbol": "C$"
+  },
+  "Niger": {
+    "code": "XOF",
+    "symbol": "CFA"
+  },
+  "Nigeria": {
+    "code": "NGN",
+    "symbol": "₦"
+  },
+  "North Korea": {
+    "code": "KPW",
+    "symbol": "₩"
+  },
+  "North Macedonia": {
+    "code": "MKD",
+    "symbol": "ден"
+  },
+  "Norway": {
+    "code": "NOK",
+    "symbol": "kr"
+  },
+  "Oman": {
+    "code": "OMR",
+    "symbol": "ر.ع."
+  },
+  "Pakistan": {
+    "code": "PKR",
+    "symbol": "₨"
+  },
+  "Palau": {
+    "code": "USD",
+    "symbol": "$"
+  },
+  "Panama": {
+    "code": "PAB",
+    "symbol": "B/."
+  },
+  "Papua New Guinea": {
+    "code": "PGK",
+    "symbol": "K"
+  },
+  "Paraguay": {
+    "code": "PYG",
+    "symbol": "₲"
+  },
+  "Peru": {
+    "code": "PEN",
+    "symbol": "S/."
+  },
+  "Philippines": {
+    "code": "PHP",
+    "symbol": "₱"
+  },
+  "Poland": {
+    "code": "PLN",
+    "symbol": "zł"
+  },
+  "Portugal": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Qatar": {
+    "code": "QAR",
+    "symbol": "ر.ق"
+  },
+  "Romania": {
+    "code": "RON",
+    "symbol": "lei"
+  },
+  "Russia": {
+    "code": "RUB",
+    "symbol": "₽"
+  },
+  "Rwanda": {
+    "code": "RWF",
+    "symbol": "FRw"
+  },
+  "Saint Kitts and Nevis": {
+    "code": "XCD",
+    "symbol": "$"
+  },
+  "Saint Lucia": {
+    "code": "XCD",
+    "symbol": "$"
+  },
+  "Saint Vincent and the Grenadines": {
+    "code": "XCD",
+    "symbol": "$"
+  },
+  "Samoa": {
+    "code": "WST",
+    "symbol": "T"
+  },
+  "San Marino": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Sao Tome and Principe": {
+    "code": "STN",
+    "symbol": "Db"
+  },
+  "Saudi Arabia": {
+    "code": "SAR",
+    "symbol": "ر.س"
+  },
+  "Senegal": {
+    "code": "XOF",
+    "symbol": "CFA"
+  },
+  "Serbia": {
+    "code": "RSD",
+    "symbol": "дин."
+  },
+  "Seychelles": {
+    "code": "SCR",
+    "symbol": "₨"
+  },
+  "Sierra Leone": {
+    "code": "SLL",
+    "symbol": "Le"
+  },
+  "Singapore": {
+    "code": "SGD",
+    "symbol": "S$"
+  },
+  "Slovakia": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Slovenia": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Solomon Islands": {
+    "code": "SBD",
+    "symbol": "SI$"
+  },
+  "Somalia": {
+    "code": "SOS",
+    "symbol": "Sh"
+  },
+  "South Africa": {
+    "code": "ZAR",
+    "symbol": "R"
+  },
+  "South Korea": {
+    "code": "KRW",
+    "symbol": "₩"
+  },
+  "South Sudan": {
+    "code": "SSP",
+    "symbol": "£"
+  },
+  "Spain": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Sri Lanka": {
+    "code": "LKR",
+    "symbol": "Rs"
+  },
+  "Sudan": {
+    "code": "SDG",
+    "symbol": "ج.س."
+  },
+  "Suriname": {
+    "code": "SRD",
+    "symbol": "$"
+  },
+  "Sweden": {
+    "code": "SEK",
+    "symbol": "kr"
+  },
+  "Switzerland": {
+    "code": "CHF",
+    "symbol": "Fr"
+  },
+  "Syria": {
+    "code": "SYP",
+    "symbol": "£"
+  },
+  "Taiwan": {
+    "code": "TWD",
+    "symbol": "NT$"
+  },
+  "Tajikistan": {
+    "code": "TJS",
+    "symbol": "SM"
+  },
+  "Tanzania": {
+    "code": "TZS",
+    "symbol": "TSh"
+  },
+  "Thailand": {
+    "code": "THB",
+    "symbol": "฿"
+  },
+  "Togo": {
+    "code": "XOF",
+    "symbol": "CFA"
+  },
+  "Tonga": {
+    "code": "TOP",
+    "symbol": "T$"
+  },
+  "Trinidad and Tobago": {
+    "code": "TTD",
+    "symbol": "TT$"
+  },
+  "Tunisia": {
+    "code": "TND",
+    "symbol": "د.ت"
+  },
+  "Turkey": {
+    "code": "TRY",
+    "symbol": "₺"
+  },
+  "Turkmenistan": {
+    "code": "TMT",
+    "symbol": "m"
+  },
+  "Tuvalu": {
+    "code": "AUD",
+    "symbol": "A$"
+  },
+  "Uganda": {
+    "code": "UGX",
+    "symbol": "USh"
+  },
+  "Ukraine": {
+    "code": "UAH",
+    "symbol": "₴"
+  },
+  "United Arab Emirates": {
+    "code": "AED",
+    "symbol": "د.إ"
+  },
+  "United Kingdom": {
+    "code": "GBP",
+    "symbol": "£"
+  },
+  "United States": {
+    "code": "USD",
+    "symbol": "$"
+  },
+  "Uruguay": {
+    "code": "UYU",
+    "symbol": "$U"
+  },
+  "Uzbekistan": {
+    "code": "UZS",
+    "symbol": "лв"
+  },
+  "Vanuatu": {
+    "code": "VUV",
+    "symbol": "VT"
+  },
+  "Vatican City": {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  "Venezuela": {
+    "code": "VES",
+    "symbol": "Bs."
+  },
+  "Vietnam": {
+    "code": "VND",
+    "symbol": "₫"
+  },
+  "Yemen": {
+    "code": "YER",
+    "symbol": "﷼"
+  },
+  "Zambia": {
+    "code": "ZMW",
+    "symbol": "ZK"
+  },
+  "Zimbabwe": {
+    "code": "ZWL",
+    "symbol": "Z$"
+  }
+}

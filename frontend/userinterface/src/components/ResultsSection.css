@@ -1,0 +1,11 @@
+.price-info {
+  text-align: right;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+.supermarket-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 6px;
+}

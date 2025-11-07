@@ -1,0 +1,309 @@
+/* Adjust the category group to be flexible */
+.category-group {
+  margin-bottom: 2rem;
+  width: 100%; /* Ensure it takes full width */
+}
+
+/* Flex container for the grid to display products horizontally */
+.grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to the next line if there's not enough space */
+  gap: 1rem;
+}
+
+/* Individual product cards inside the grid */
+.card {
+  width: 200px; /* Fixed width for product cards */
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Add a slight hover effect for better interactivity */
+}
+
+/* Adjust card media to maintain aspect ratio */
+.card-media {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+/* Optional: You can add some additional spacing or styling here */
+.category-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: transform 0.2s;
+}
+
+.category-header img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.category-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.category-header:hover {
+  transform: scale(1.05);
+}
+
+/* Owner Dashboard Styles */
+.owner-dashboard {
+  padding: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.owner-dashboard h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Categories Grid */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  margin-bottom: 2rem;
+}
+
+.category-card {
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s;
+  padding: 1rem;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover {
+  transform: scale(1.1);
+}
+
+.category-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.category-card p {
+  margin: 0;
+  /* font-weight: 500; */
+  
+}
+
+/* Add Product Section */
+.add-product-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-product-section h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.add-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* .category-select {
+  appearance: none; /* Removes the browser’s default dropdown arrow 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid orangered;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  color: #333;
+  font-size: 1rem;
+  
+  background-image: linear-gradient(45deg, transparent 50%, orangered 50%), 
+                    linear-gradient(135deg, orangered 50%, transparent 50%);
+  background-position: calc(100% - 15px) calc(1rem + 2px), calc(100% - 10px) calc(1rem + 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+} */
+
+.category-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem;
+  background-color: white;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.category-select:focus {
+  border-color: orangered !important;
+  box-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
+  outline: none !important;
+}
+
+/* 
+.category-select:focus {
+  border-color: orangered !important;  
+  box-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
+  outline: none;
+} */
+
+
+.category-select option {
+  background-color: white;
+  color: #333;
+}
+
+/* 
+.category-select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+} */
+
+/* .new-product-btn {
+  background-color: #1976d2;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.new-product-btn:hover {
+  background-color: #155a9c;
+} */
+
+.image-upload-container {
+  margin: 1rem 0;
+}
+
+.image-upload-label {
+  display: block;
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.image-upload-input {
+  display: none;
+}
+
+.image-preview {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.preview-image {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.selected-product-preview {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.submit-btn {
+  background-color: orangered;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #e02a0e;
+}
+
+.cancel-btn{
+    background-color: #f44336;
+    color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+}
+
+.cancel-btn:hover {
+    background-color: #da190b;
+}
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #d32f2f;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+

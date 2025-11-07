@@ -1,0 +1,166 @@
+.product-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem;
+}
+
+.product-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.product-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.favorite-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  z-index: 10;
+}
+
+.favorite-button:hover {
+  transform: scale(1.1);
+}
+
+.heart-icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+}
+
+.heart-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.heart-icon.favorited svg path {
+  fill: #e74c3c;
+  stroke: #e74c3c;
+}
+
+.prices-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.prices-container h2 {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.prices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.price-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+  position: relative;
+}
+
+.price-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.product-image {
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.supermarket-info h3 {
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.location {
+  color: #666;
+  margin: 0 0 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.region {
+  color: #888;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.price-info {
+  text-align: right;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+}
+.deal-badge {
+  position: absolute;
+  top: 12px;
+  right: -10px; /* instead of -40px */
+  background-color: orangered;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 35px; /* adjust width to fit */
+  text-align: center;
+  transform: rotate(45deg);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin: 2rem 0;
+}
+
+.error {
+  text-align: center;
+  color: #e74c3c;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+} 
+
+/* .supermarket {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+} */
+
+.supermarket-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 6px;
+}

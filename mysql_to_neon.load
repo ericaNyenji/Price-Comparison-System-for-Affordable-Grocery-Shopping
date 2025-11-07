@@ -1,0 +1,12 @@
+LOAD DATABASE
+     FROM mysql://root:mypass@host.docker.internal/old_db
+     INTO postgresql://neondb_user:neonpass@ep-cool-12345.us-east-2.aws.neon.tech/neondb
+
+ WITH include no drop, create tables, create indexes, reset sequences,
+      workers = 4, concurrency = 1, data only
+
+ SET work_mem to '64MB',
+     maintenance_work_mem to '512 MB',
+     search_path to 'public';
+
+ALTER SCHEMA 'old_db' RENAME TO 'public';

@@ -1,0 +1,44 @@
+.category-page {
+    padding: 3rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Keeps the smaller cards */
+    gap: 15px; /* Reduced gap between cards */
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    height: 380px
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-media {
+    background-size: contain; /* Ensures the full image is visible */
+    background-position: center;
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    height: 220px; /* Adjust height for the image */
+}
+
+.card-content {
+    padding: 12px; /* Reduced padding */
+}
+
+.card h3 {
+    font-size: 16px; /* Smaller font size */
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}

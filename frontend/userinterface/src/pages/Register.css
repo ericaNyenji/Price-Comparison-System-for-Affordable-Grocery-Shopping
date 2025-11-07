@@ -1,0 +1,101 @@
+.register-container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+   
+  /* .success-message {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+  } */
+  
+  /* .success-message {
+    padding: 10px 20px;
+    background-color: #e02a0e;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  } */
+  
+  /* .success-message button:hover {
+    background-color: #e02a0e;
+  } */
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-field {
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .input-field:focus {
+    border-color: orangered;
+  }
+  
+  .btn {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn {
+    background-color: orangered;
+    color: white;
+    border: none;
+    margin-top: 20px;
+  }
+  
+  .submit-btn:hover {
+    background-color: orangered;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.95rem;
+  }
+  
+  .login-link  {
+    color:  orangered;
+    text-decoration: none;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+  
+  .css-b62m3t-container {
+  margin-bottom: 15px; /* adds space below each react-select */
+}
