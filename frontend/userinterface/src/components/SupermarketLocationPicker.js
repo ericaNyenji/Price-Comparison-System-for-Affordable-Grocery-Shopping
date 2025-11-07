@@ -100,8 +100,8 @@ const SupermarketLocationPicker = ({ onLocationSelect, onSupermarketSelect, onNa
   const fetchData = async () => {
     try {
       const [supermarketsRes, locationsRes] = await Promise.all([
-        axios.get('http://localhost:5000/api/supermarkets'),
-        axios.get('http://localhost:5000/api/supermarket_locations')
+        axios.get(`${process.env.REACT_APP_API_URL}/api/supermarkets`),
+        axios.get(`${process.env.REACT_APP_API_URL}/api/supermarket_locations`)
       ]);
       
       setSupermarkets(supermarketsRes.data);
@@ -121,7 +121,7 @@ const SupermarketLocationPicker = ({ onLocationSelect, onSupermarketSelect, onNa
   const handleAddNewSupermarket = async () => {
     if (newSupermarketName.trim()) {
       try {
-        const response = await axios.post('http://localhost:5000/api/supermarkets', {
+        const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/supermarkets`, {
           supermarket_name: newSupermarketName.trim()
         });
         setSupermarkets([...supermarkets, response.data]);
