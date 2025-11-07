@@ -55,7 +55,7 @@ const CategoryPage = () => {
             >
               <div
                 className="card-media"
-                style={{ backgroundImage: `url(${process.env.REACT_APP_API_URL}${product.image_path})` }}
+                style={{ backgroundImage: `url(${process.env.REACT_APP_API_URL}/${product.image_path})` }}
               />
               <div className="card-content">
                 <h3>{product.product_name}</h3>
