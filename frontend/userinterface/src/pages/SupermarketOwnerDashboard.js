@@ -30,7 +30,7 @@ const SupermarketOwnerDashboard = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/category');
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/category`);
         setCategories(response.data.data);
         setLoading(false);
       } catch (err) {
@@ -44,7 +44,7 @@ const SupermarketOwnerDashboard = () => {
   
   // Initialize socket connection
   useEffect(() => {
-    const newSocket = io('http://localhost:5000', {
+    const newSocket = io(`${process.env.REACT_APP_API_URL}`, {
       reconnection: true,
       reconnectionAttempts: 5,
       reconnectionDelay: 1000
@@ -80,7 +80,7 @@ const SupermarketOwnerDashboard = () => {
   useEffect(() => {
     const fetchAllProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/products');
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/products`);
         setExistingProducts(response.data);
       } catch (error) {
         console.error('Error fetching products:', error);
@@ -111,7 +111,7 @@ const SupermarketOwnerDashboard = () => {
     try {
       setLoadingProducts(true);
       const locationId = sessionStorage.getItem("locationId") || 1;
-      const response = await axios.get(`http://localhost:5000/api/instock?locationId=${locationId}`);
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/instock?locationId=${locationId}`);
       const groupedProducts = groupProductsByCategory(response.data.data || []);
       setProductsInStock(groupedProducts);
     } catch (error) {
@@ -172,7 +172,7 @@ const SupermarketOwnerDashboard = () => {
   formData.append('categoryId', productCategory);
 
 
-        const productResponse = await axios.post("http://localhost:5000/api/products", formData,
+        const productResponse = await axios.post(`${process.env.REACT_APP_API_URL}/api/products`, formData,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -187,7 +187,7 @@ const SupermarketOwnerDashboard = () => {
 
       // Add price for the product
       const priceResponse = await axios.post(
-        "http://localhost:5000/api/prices",
+        `${process.env.REACT_APP_API_URL}/api/prices`,
         {
           product_id: productId,
           price: productPrice,
