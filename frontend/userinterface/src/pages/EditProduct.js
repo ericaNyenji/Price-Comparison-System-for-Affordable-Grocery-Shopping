@@ -285,7 +285,7 @@ const EditProduct = () => {
   return (
     <div className="edit-product-container">
       <img
-        src={`${process.env.REACT_APP_API_URL}/${product.image_path}`} 
+        src={`${process.env.REACT_APP_API_URL}/${product.imagePath}`} 
         alt={product.name} 
         className="product-image" 
         style={{
