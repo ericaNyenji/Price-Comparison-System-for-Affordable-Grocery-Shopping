@@ -123,7 +123,7 @@ const EditProduct = () => {
       }
     });
 
-    return () => {
+     () => {
       newSocket.close();
     };
   }, [product_id, location_id]);
@@ -285,7 +285,7 @@ const EditProduct = () => {
   return (
     <div className="edit-product-container">
       <img 
-        src={`/${product.imagePath}`} 
+        src={`${process.env.REACT_APP_API_URL}/${product.imagePath}`} 
         alt={product.name} 
         className="product-image" 
         style={{
