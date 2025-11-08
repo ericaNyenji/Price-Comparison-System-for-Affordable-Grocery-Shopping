@@ -12,12 +12,13 @@ app.use('/images', express.static(path.join(__dirname, 'public/images')));
 const http = require('http');
 const { Server } = require('socket.io');
 const server = http.createServer(app);
-const io = new Server(server, { cors: 
-  { //origin: '*' 
-    origin: "http://localhost:3000",
-    methods: ["GET", "POST"]
-
-  } });
+const io = new Server(server, { 
+  cors: { 
+    origin: allowedOrigins, // allow both local & deployed frontend
+    methods: ["GET", "POST"],
+    credentials: true
+  } 
+});
 
 
 
@@ -72,8 +73,10 @@ app.set('io', io);
 //app.use(cors());
 const allowedOrigins = [
   "http://localhost:3000",
-  "http://127.0.0.1:3000"
+  "http://127.0.0.1:3000",
+  "https://price-comparison-frontend-t96z.onrender.com" // add my deployed frontend URL
 ];
+
 
 app.use(cors({
   origin: function (origin, callback) {
