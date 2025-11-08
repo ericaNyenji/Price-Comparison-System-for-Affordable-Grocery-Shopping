@@ -123,7 +123,7 @@ const EditProduct = () => {
       }
     });
 
-     () => {
+     return () => {
       newSocket.close();
     };
   }, [product_id, location_id]);
