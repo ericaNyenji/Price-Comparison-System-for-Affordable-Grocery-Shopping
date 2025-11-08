@@ -223,7 +223,7 @@ const EditProduct = () => {
       // Set start time to current time
       const currentDateTime = new Date().toISOString().slice(0, 16);
 
-      const response = await axios.post('${process.env.REACT_APP_API_URL}/api/deals', {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/deals`, {
         productId: product_id,
         dealStartDate: currentDateTime,
         dealEndDate: dealForm.endDateTime,
