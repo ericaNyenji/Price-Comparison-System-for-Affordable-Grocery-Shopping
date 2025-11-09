@@ -13,3 +13,24 @@
 ➝ Users can also leave reviews for products fostering a community driven platform. 
 
 ➝ Supermarkets owners can put products on deal
+
+Try loging in as(Kenyan User)
+
+Supermarket Owner: 
+Email: erica@gmail.com
+Password: asd
+
+Customer: 
+Email: mary@gmail.com
+Password: asd
+
+or 
+Try loging in as(Hungarian User)
+
+Supermarket Owner: 
+Email: go@gmail.com
+Password: asd
+
+Customer: 
+Email: ava@gmail.com
+Password: asd
