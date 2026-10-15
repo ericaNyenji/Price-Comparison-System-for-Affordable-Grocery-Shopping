@@ -14,6 +14,8 @@
 
 ➝ Supermarkets owners can put products on deal
 
+Deployed website link : https://price-comparison-frontend-t96z.onrender.com/
+
 Try loging in as(Kenyan User)
 
 Supermarket Owner: 
